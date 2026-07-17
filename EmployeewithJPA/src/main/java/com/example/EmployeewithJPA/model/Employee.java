@@ -1,4 +1,5 @@
-package com.example.JPADemo.model;
+package com.example.EmployeewithJPA.model;
+
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
@@ -6,11 +7,10 @@ import lombok.Data;
 
 @Entity
 @Data
-public class Student {
+public class Employee {
 
     @Id
-    private int rno;
+    private int id;
     private String name;
-    private String gender;
-    private String technology;
+    private int age;
 }

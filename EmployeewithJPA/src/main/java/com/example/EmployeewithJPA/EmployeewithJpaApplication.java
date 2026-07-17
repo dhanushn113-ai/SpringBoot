@@ -1,14 +1,13 @@
-package com.example.JPADemo;
+package com.example.EmployeewithJPA;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class JpaDemoApplication {
+public class EmployeewithJpaApplication {
 
 	public static void main(String[] args) {
-
-		SpringApplication.run(JpaDemoApplication.class, args);
+		SpringApplication.run(EmployeewithJpaApplication.class, args);
 	}
 
 }

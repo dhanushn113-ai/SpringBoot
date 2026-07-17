@@ -1,7 +1,4 @@
 package com.example.JPADemo.controller;
-
-
-
 import com.example.JPADemo.model.Student;
 import com.example.JPADemo.service.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
