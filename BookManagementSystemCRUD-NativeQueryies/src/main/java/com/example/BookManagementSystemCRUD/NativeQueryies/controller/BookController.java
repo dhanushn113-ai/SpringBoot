@@ -4,6 +4,9 @@ import com.example.BookManagementSystemCRUD.NativeQueryies.model.Book;
 import com.example.BookManagementSystemCRUD.NativeQueryies.service.BookService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.repository.query.Param;
+import org.springframework.http.HttpEntity;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -19,13 +22,18 @@ public class BookController {
         return bookService.getAllBooks();
     }
     @PostMapping("book")
-    public String addBooks(@RequestBody Book book){
+    public ResponseEntity<String> addBooks(@RequestBody Book book){
         bookService.addBooks(book);
-        return "added";
+        return new ResponseEntity<>("added", HttpStatus.CREATED);
     }
     @GetMapping("book/{id}")
-    public Book getBookById(@PathVariable("id") int id){
-       return bookService.getBookById(id);
+    public ResponseEntity<Book> getBookById(@PathVariable("id") int id){
+       Book book = bookService.getBookById(id);
+       if(book == null){
+           return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+       }else{
+           return new ResponseEntity<>(book,HttpStatus.OK);
+       }
     }
     @PutMapping("book")
     public String updateBooks(@RequestBody Book book){
