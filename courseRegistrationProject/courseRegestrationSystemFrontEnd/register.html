@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <style>
+            body{
+                background-color: hsl(150, 8%, 10%);
+                text-align: center;
+            }
+            form{
+                margin: auto;
+                padding: 20px;
+                width: 800px;
+                background-color: white;
+                
+            }
+            input, select, button {
+                width: 150px;
+                padding: 10px;
+                margin: 4%;
+            }
+            button {
+                background-color: rgb(84, 232, 84);
+                color: #eee7e7;
+                font-weight: bold;
+                font-style: italic;
+                font-size: medium;
+                cursor: pointer;
+            }
+            button:hover {
+                background-color: rgb(5, 85, 57);
+            }
+        </style>
+    </head>
+    <body>
+        <h1 style="color: yellow;">
+            Registers Students
+        </h1>
+
+        <form action="http://localhost:8080/course/regester" method="post">
+            <label for="name" >Enter Your Name</label>
+            <input type="text" name="candidate_name"><br><br>
+
+            <label for="email">Enter Your Email</label>
+            <input type="text" name="email_id"><br><br>
+
+            <label for="course">Course Name</label>
+            <select id="course" name="courseName"><br>
+                <option value="JavaEssentials">JavaEssentials</option>
+                <option value="python for ml">Python</option>
+                <option value="block chain">Block chain</option>
+            </select><br>
+
+            <button type="submit">submit</button>
+        </form>
+    </body>
+
+</html>

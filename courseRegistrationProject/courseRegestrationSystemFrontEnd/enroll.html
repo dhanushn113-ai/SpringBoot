@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+    <style>
+        bodt {
+            padding: "50px";
+        }
+        td {
+            background-color: aliceblue;
+        }
+    </style>
+    <body>
+        <h2 align="center">
+            Enrolled Students
+        </h2>
+        <table align="center" border="1">
+            <tr  align="center" style="background-color: aquamarine;">
+                <th width="100">name</th>
+                <th width="200">emai_id</th>
+                <th width="150">course_name</th>
+            </tr>
+            <tbody align="center" id="coursetable"></tbody>
+        </table>
+    </body>
+
+
+    <script type="text/javascript">
+        window.onload = function() {
+            showEnrollStudents();
+        };
+
+    </script>
+
+</html>
