@@ -285,8 +285,16 @@ This collection represents my hands-on learning journey with Spring Boot and rel
 
 ## 👨‍💻 Author
 
-Made with ❤️ by Dhanush N
+Dhanush N
 
 GitHub: https://github.com/dhanushn113-ai
 
-If you found these projects helpful, feel free to ⭐ the repositories and connect with me on GitHub!
+---
+
+<p align="center">
+⭐ If you found this project helpful, consider giving it a star.
+</p>
+
+<p align="center">
+Made with ❤️ by <b>Dhanush N</b>
+</p>
